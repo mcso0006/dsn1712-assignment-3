@@ -25,9 +25,9 @@ footer {
 }
 
 .wrapper {
-    /* should this go above to be more universal? */
     max-width: 940px;
-    padding: 20px 40px;
+    margin: 0 auto;
+    padding: 2em;
 }
 
 .header-container {
@@ -83,38 +83,53 @@ footer {
 
 #services {
     background-color: #fafafa;
-    padding: 20px 20px;
+    padding: 2em;
 }
 
 #services h2 {
     max-width: 940px;
     text-align: center;
-    margin: 20px 20px 20px 20px;
+    margin-top: 0;
 }
-/* sections need to be white with border? */
-.articles {
+
+.services-container div {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
 }
 
-article {
+.services-container article {
     display: flex;
     flex-direction: column;
-}
-/*  can't seem to figure out how to push them down and left */
-.btn {
-    margin: auto;
-    padding: 10px 20px;
-    background-color: black;
-    color: white;
-    text-decoration: none;
-    border: 5px solid black;
+    align-items: flex-start;
+    padding: 1em;
+    background-color: #fff;
 }
 
-.btn:hover {
-    background-color: white;
-    color: black;
+.services-container article h3 {
+    margin-bottom: 0;
+}
+
+.services-container article p {
+    padding-bottom: 2em;
+}
+
+.services-container a:link,
+.services-container a:visited {
+    display: inline-block;
+    padding: .8em 1em;
+    background-color: #414361;
+    color: white;
+    text-decoration: none;
+    border: 2px solid #414361;
+    border-radius: 5px solid black;
+    margin-top: auto;
+}
+
+.services-container a:hover,
+.services-container a:focus {
+    background-color: #fff;
+    color: #414361;
 }
 
 #work h2 {
